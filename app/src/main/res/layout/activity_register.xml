@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_second"
+    tools:context="com.techno71.fireservice.View.RegisterActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_id"
+        android:background="@color/Coral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_userSingUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/White"
+            app:title="@string/registerion"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview_singup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/text_singUp_login"
+        android:layout_below="@+id/appbar_id"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:scaleType="fitXY"
+                app:lottie_autoPlay="true"
+                android:tint="@color/profile"
+                android:backgroundTint="@color/profile"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/user" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:cardMaxElevation="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView_Scanner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:alpha="0.1"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/id" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/floating_scanner"
+                        style="@style/AppTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@color/WhatsApp"
+                        android:src="@drawable/ic_baseline_drive_24"
+                        android:tint="@color/white"
+                        app:fabSize="mini" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Spinner
+
+                android:id="@+id/userType_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/spinner_style"
+                android:entries="@array/user_type"
+                android:padding="@dimen/_15sdp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/OutlinedRoundedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:hintEnabled="false">
+
+
+                <EditText
+                    android:id="@+id/edit_regiUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_backgroud"
+                    android:ems="10"
+                    android:hint="@string/user_name_reg"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:importantForAutofill="no"
+                    android:textColor="@color/white"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp"
+                    android:textColorHint="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/OutlinedRoundedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@drawable/edit_backgroud"
+                android:textColorHint="@color/white"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/edit_regiUserPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_backgroud"
+                    android:ems="10"
+                    android:hint="@string/phone_number_reg"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp"
+                    android:importantForAutofill="no"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/OutlinedRoundedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:boxStrokeColor="@color/white"
+                app:boxStrokeWidth="@dimen/_1sdp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/white">
+
+
+                <EditText
+                    android:id="@+id/edit_regiUserPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_backgroud"
+                    android:ems="10"
+                    android:hint="@string/password_reg"
+                    android:importantForAutofill="no"
+                    android:textColor="@color/white"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp"
+                    android:textColorHint="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/OutlinedRoundedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:boxStrokeColor="@color/white"
+                app:boxStrokeWidth="@dimen/_1sdp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/white">
+
+
+                <EditText
+                    android:id="@+id/edit_regiUserCompass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_backgroud"
+                    android:ems="10"
+                    android:hint="@string/comfrim_password_reg"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    android:textColor="@color/white"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp"
+                    android:textColorHint="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <info.hoang8f.widget.FButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:backgroundTint="@color/Indigo"
+                android:onClick="Registation"
+                android:text="@string/registation_button"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/text_singUp_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/talic"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="@dimen/_5sdp"
+        android:selectAllOnFocus="true"
+        android:text="@string/already_have_an_account_sing_in"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ফায়ার সার্ভিস</string>
+    <string name="name_bann" translatable="false">নাম</string>
+    <string name="fullName" translatable="false">পুরো নামঃ মেহেদী হাসান তারেক</string>
+    <string name="name" translatable="false">তারেক</string>
+    <string name="address_bann" translatable="false">ঠিকানা</string>
+    <string name="address" translatable="false">ফেনী</string>
+    <string name="phone_bann" translatable="false">ফোন</string>
+    <string name="phone" translatable="false">০১৮৩০০৮৯৭৫০</string>
+    <string name="email_bann" translatable="false">ইমেইল</string>
+    <string name="gmail" translatable="false">tarek@gmail.com</string>
+    <string name="gender_bann" translatable="false">লিঙ্গ</string>
+    <string name="gender" translatable="false">পুরুষ</string>
+    <string name="date_of_birth_bann" translatable="false">জন্ম তারিখ</string>
+    <string name="date_bith" translatable="false">১-১-১৯৯৯</string>
+    <string name="religion_bann" translatable="false">ধর্ম</string>
+    <string name="religion" translatable="false">ইসলাম</string>
+    <string name="traders_licence_bann" translatable="false">ট্রেডার্স লাইসেন্স</string>
+    <string name="traders_licence" translatable="false">1239587</string>
+    <string name="building_nobann" translatable="false">দালান নম্বর</string>
+    <string name="building_no" translatable="false">14 মালিবাগ চৌধুরী পাড়া রাস্তা, ঢাকা 3/3</string>
+    <string name="account_type_bann" translatable="false">অ্যাকাউন্ট ধরন</string>
+    <string name="user_bann" translatable="false">ব্যবহারকারী</string>
+    <string name="blood_groupbann" translatable="false">রক্তের গ্রুপ</string>
+    <string name="blood" translatable="false">A+</string>
+    <string name="edit_profileButton" translatable="false">জীবন বৃত্তান্ত সম্পাদনা</string>
+    <string name="edit_passwordButton" translatable="false">পাসওয়ার্ড সম্পাদনা করুন</string>
+    <string name="language" translatable="false">ভাষা</string>
+    <string name="contact_us" translatable="false">যোগাযোগ করুন</string>
+    <string name="privacy_policy" translatable="false">গোপনীয়তা নীতি</string>
+    <string name="times_conditions" translatable="false">শর্তাবলী</string>
+    <string name="refer_apps" translatable="false">অ্যাপস দেখুন</string>
+    <string name="Setting">সেটিংস</string>
+    <string name="otp_verfication">OTP যাচাইকরণ</string>
+    <string name="enter_the_otp_send_to_your">আপনার কাছে পাঠানো ওটিপি লিখুন</string>
+    <string name="verify_button">যাচাই করুন</string>
+    <string name="edit_profileName">মেহেদী হাসান তারেক</string>
+    <string name="full_name_edit">পূর্ণ নাম</string>
+    <string name="full_nameEditText">নাম</string>
+    <string name="blood_group_edit_text">রক্তের গ্রুপ</string>
+    <string name="Forgot_banner">পাসওয়ার্ড ভুলে গেছেন</string>
+   <!-- <string name="home_usermenu">হোম </string>-->
+    <string name="user_profilemenu">প্রোফাইল</string>
+    <string name="password_usermenu">পাসওয়ার্ড পরিবর্তন</string>
+    <string name="setting_usermenu">সেটিংস</string>
+    <string name="user_logoutmenu">লগআউট</string>
+    <string name="reset_passwrod">পাসওয়ার্ড রিসেট করুন</string>
+    <string name="forgorpasswordOtp">ফরগট পাসওয়ার্ড  otp </string>
+    <string name="registerion">রেজিস্টেশন</string>
+    <string name="change_password">চেঞ্জ পাসওয়ার্ড</string>
+    <string name="view_profile">ভিউ প্রোফাইল</string>
+    <string name="bookmark">বুকমার্ক</string>
+    <string name="Register_send_otp">রেজিস্টার সেন্ড otp</string>
+    <string name="blood_group">ব্লাড গ্রুপ</string>
+    <string name="help_center_phone_call">সাহায্য কেন্দ্র কল</string>
+    <string name="please_select_terms_conditions_for_default_notification">ডিফল্ট বিজ্ঞপ্তির জন্য শর্তাবলী নির্বাচন করুন!!</string>
+    <string name="message">Message</string>
+    <string name="if_notification_is_sent_without_any_reason_legal_action_will_be_taken_against_him">কোনো কারণ ছাড়াই প্রজ্ঞাপন পাঠানো হলে তার বিরুদ্ধে আইনগত ব্যবস্থা নেওয়া হবে!!</string>
+    <string name="news_menu">খবর</string>
+    <string name="view_news">খবর দেখুন</string>
+    <string name="news_uploadDate">তারিখ:</string>
+    <string name="news_title">শিরোনাম:</string>
+    <string name="full_descriptionNews">পূর্ণ বিবরণ</string>
+    <string name="emergency_help_n_needed">জরুরী সাহায্য \n প্রয়োজন?</string>
+    <string name="just_hold_the_button_to_call">শুধু কল করতে বোতামে ক্লিক করুন</string>
+    <string name="Map">মানচিত্র</string>
+    <string name="Search_Here">এখানে অনুসন্ধান করুন..</string>
+    <string name="home_com">হোম</string>
+    <string name="profile_com">প্রোফাইল</string>
+    <string name="bookmarks_com">বুকমার্ক</string>
+    <string name="password_changeCom">পাসওয়ার্ড পরিবর্তন</string>
+    <string name="setting_com">সেটিংস</string>
+    <string name="news_com">খবর</string>
+    <string name="help_center_phone_callCom">সাহায্য কেন্দ্র কল</string>
+    <string name="logout_com">লগআউট</string>
+    <string name="forgetnew_password">নতুন পাসওয়ার্ড</string>
+    <string name="View_Information">তথ্য দেখুন</string>
+    <string name="religion_editprofile">ধর্ম</string>
+    <string name="current_password">বর্তমান পাসওয়ার্ড</string>
+    <string name="new_password">নতুন পাসওয়ার্ড</string>
+    <string name="confirm_new_password">পাসওয়ার্ড নিশ্চিত করুন</string>
+    <string name="update_password">পাসওয়ার্ড আপডেট করুন</string>
+    <string name="update">আপডেট</string>
+    <string name="login">লগইন </string>
+    <string name="registation_button">নিবন্ধন</string>
+    <string name="phone_numberlog">ফোন নম্বর</string>
+    <string name="password_log">পাসওয়ার্ড</string>
+    <string name="comfrim_password_reg">পাসওয়ার্ড নিশ্চিত করুন</string>
+    <string name="password_reg">পাসওয়ার্ড</string>
+    <string name="phone_number_reg">ফোন নম্বর</string>
+    <string name="user_name_reg">ব্যবহারকারীর নাম</string>
+    <string name="don_t_have_an_account_sign_up">একটি অ্যাকাউন্ট নেই? নিবন্ধন করুন</string>
+    <string name="already_have_an_account_sing_in">ইতিমধ্যে একটি সদস্যপদ আছে? সাইন ইন করুন</string>
+
+    <string name="myhome">হোম</string>
+    <string name="save_password">পাসওয়ার্ড সংরক্ষণ</string>
+    <string name="forgotten_passwordLog">ভুলে যাওয়া পাসওয়ার্ড?</string>
+    <string name="login_page">লগইন পৃষ্ঠায়</string>
+    <string name="add_Comstorage">অ্যাড স্টোরেজ</string>
+    <string name="my_Comcomment">আমার মন্তব্য</string>
+</resources>

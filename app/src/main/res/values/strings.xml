@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name" translatable="false">FireService</string>
+    <string name="open">Open</string>
+    <string name="close">close</string>
+
+    <string-array name="user_color">
+        <item>Select--Colors--</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Red</item>
+    </string-array>
+
+    <string-array name="user_type">
+        <item>Select Type</item>
+        <item>User</item>
+        <item>Company</item>
+    </string-array>
+
+    <string-array name="company_flat">
+        <item>Select---Floor--</item>
+        <item>1st Floor</item>
+        <item>2nd Floor</item>
+        <item>3rd Floor</item>
+        <item>4th Floor</item>
+        <item>5th Floor</item>
+        <item>6th Floor</item>
+        <item>7th Floor</item>
+        <item>8th Floor</item>
+        <item>9th Floor</item>
+        <item>10th Floor</item>
+        <item>11th Floor</item>
+        <item>12th Floor</item>
+        <item>13th Floor</item>
+        <item>14th Floor</item>
+        <item>15th Floor</item>
+        <item>16th Floor</item>
+        <item>17th Floor</item>
+        <item>18th Floor</item>
+        <item>19th Floor</item>
+        <item>20th Floor</item>
+    </string-array>
+
+    <array name="autosize_te_sizes">
+        <item>8.0sp</item>
+        <item>10.0sp</item>
+        <item>12.0sp</item>
+        <item>15.0sp</item>
+        <item>20.0sp</item>
+    </array>
+
+    <string name="google_map_key">AIzaSyBO5tOT5NE3v2gWelQqBe_QWDqUOhFK44w</string>
+    <string name="title_activity_admin_maps">AIzaSyBO5tOT5NE3v2gWelQqBe_QWDqUOhFK44w</string>
+    <string name="title_activity_company_maps">AIzaSyBO5tOT5NE3v2gWelQqBe_QWDqUOhFK44w</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_bann" translatable="false">Name</string>
+    <string name="fullName" translatable="false">Mehedi Hasan Tarek</string>
+    <string name="name" translatable="false">Tarek</string>
+    <string name="address_bann" translatable="false">Address</string>
+    <string name="address" translatable="false">Feni</string>
+    <string name="phone_bann" translatable="false">Phone</string>
+    <string name="phone" translatable="false">01830089750</string>
+    <string name="email_bann" translatable="false">Email</string>
+    <string name="gmail" translatable="false">tarek@gmail.com</string>
+    <string name="gender_bann" translatable="false">Gender</string>
+    <string name="gender" translatable="false">Male</string>
+    <string name="date_of_birth_bann" translatable="false">Date Of Birth</string>
+    <string name="date_bith" translatable="false">1-1-1999</string>
+    <string name="religion_bann" translatable="false">Religion</string>
+    <string name="religion" translatable="false">Islam</string>
+    <string name="traders_licence_bann" translatable="false">Traders Licence</string>
+    <string name="traders_licence" translatable="false">1239587</string>
+    <string name="building_nobann" translatable="false">Building No</string>
+    <string name="building_no" translatable="false">14 Malibagh Chowdhury Para Rd,Dhaka 3/3</string>
+    <string name="account_type_bann" translatable="false">Account Type</string>
+    <string name="user_bann" translatable="false">User</string>
+    <string name="blood_groupbann" translatable="false">Blood Group</string>
+    <string name="blood" translatable="false">A+</string>
+    <string name="edit_profileButton" translatable="false">Edit Profile</string>
+    <string name="edit_passwordButton" translatable="false">Edit Password</string>
+    <string name="language">Language</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="privacy_policy">privacy Policy</string>
+    <string name="times_conditions">Times Conditions</string>
+    <string name="refer_apps">Refer Apps</string>
+    <string name="Setting">Setting</string>
+    <string name="otp_verfication">OTP Verfication</string>
+    <string name="enter_the_otp_send_to_your">Enter The OTP send To your</string>
+    <string name="verify_button">Verify</string>
+    <string name="edit_profileName">Mehedi Hasan Tarek</string>
+    <string name="full_name_edit">Full Name</string>
+    <string name="full_nameEditText">Full Name</string>
+    <string name="blood_group_edit_text">Blood Group</string>
+    <string name="Forgot_banner">Forgot password</string>
+    <string name="forgot_buttom">Forgot passwrod</string>
+    <!--<string name="home_usermenu">Home</string>-->
+    <string name="user_profilemenu">Profile</string>
+    <string name="password_usermenu">Password change</string>
+    <string name="setting_usermenu">Setting</string>
+    <string name="user_logoutmenu">Logout</string>
+    <string name="reset_passwrod">Reset Passwrod</string>
+    <string name="forgorpasswordOtp">Forgot Password Otp</string>
+    <string name="registerion">Registation</string>
+    <string name="change_password">Change Password</string>
+    <string name="view_profile">View Profile</string>
+    <string name="bookmark">BookMark</string>
+    <string name="Register_send_otp">Register Send Otp</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="help_center_phone_call">Help Center Phone Call</string>
+    <string name="please_select_terms_conditions_for_default_notification">Please Select Terms Conditions for Default Notification!!</string>
+    <string name="message">Message</string>
+    <string name="if_notification_is_sent_without_any_reason_legal_action_will_be_taken_against_him">If Notification is sent without any reason, legal action will be taken against him!!</string>
+    <string name="news_menu">News</string>
+    <string name="view_news">View News</string>
+    <string name="news_uploadDate">Date:</string>
+    <string name="news_title">Title:</string>
+    <string name="full_descriptionNews">Full Description</string>
+    <string name="emergency_help_n_needed">Emergency Help \n Needed ?</string>
+    <string name="just_hold_the_button_to_call">Just Hold the Button to Call</string>
+    <string name="Map">Map</string>
+    <string name="Search_Here">Search Here..</string>
+    <string name="home_com">Home</string>
+    <string name="profile_com">Profile</string>
+    <string name="bookmarks_com">Bookmarks</string>
+    <string name="password_changeCom">Password change</string>
+    <string name="setting_com">Setting</string>
+    <string name="news_com">News</string>
+    <string name="help_center_phone_callCom">Help Center Phone Call</string>
+    <string name="logout_com">Logout</string>
+    <string name="forgetnew_password">New password</string>
+    <string name="View_Information">View Information</string>
+    <string name="religion_editprofile">Religion</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="update_password">Update password</string>
+    <string name="update">Update</string>
+    <string name="login">Login</string>
+    <string name="registation_button">Registation</string>
+    <string name="phone_numberlog">Phone Number</string>
+    <string name="password_log">Password</string>
+    <string name="comfrim_password_reg">Comfrim Password</string>
+    <string name="password_reg">Password</string>
+    <string name="phone_number_reg">Phone Number</string>
+    <string name="user_name_reg">User name</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="already_have_an_account_sing_in">Already have an account? Sing In</string>
+    <string name="hello_kk">hello</string>
+    <string name="myhome">home</string>
+    <string name="save_password">Save Password</string>
+    <string name="forgotten_passwordLog">Forgotten Password?</string>
+    <string name="login_page">Login Page</string>
+    <string name="title_activity_storage_maps">AIzaSyBO5tOT5NE3v2gWelQqBe_QWDqUOhFK44w</string>
+    <string name="title_activity_road_map">AIzaSyBO5tOT5NE3v2gWelQqBe_QWDqUOhFK44w</string>
+    <string name="add_Comstorage">Add Storage</string>
+    <string name="my_Comcomment">My Comment</string>
+
+</resources>

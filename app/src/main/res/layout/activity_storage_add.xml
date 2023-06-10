@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_second"
+    tools:context=".View.StorageAddActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_id"
+        android:background="@color/Coral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_companystorg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/White"
+            app:title="Storage Add"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+   <ScrollView
+       android:layout_centerInParent="true"
+       android:layout_below="@+id/appbar_id"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scrollbars="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <androidx.cardview.widget.CardView
+               android:layout_centerHorizontal="true"
+               android:layout_below="@+id/text_nidBackSide"
+               android:id="@+id/cardview_nidBack"
+               android:layout_marginTop="@dimen/_15sdp"
+               android:layout_width="match_parent"
+               android:background="@color/white"
+               android:layout_height="@dimen/_150sdp"
+               android:layout_marginStart="@dimen/_10sdp"
+               android:layout_marginEnd="@dimen/_10sdp"
+               app:cardCornerRadius="@dimen/_10sdp"
+               app:cardElevation="@dimen/_10sdp">
+
+               <RelativeLayout
+                   android:background="@drawable/edit_backgroud"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <ImageView
+                       android:id="@+id/CompanyStorageImage"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_gravity="center"
+                       android:scaleType="fitXY"
+                       android:src="@drawable/strog" />
+
+                   <TextView
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Select Storage Image"
+                       android:id="@+id/textstorage_title"
+                       android:textSize="@dimen/_18sdp"
+                       android:layout_centerInParent="true"
+                       android:fontFamily="@font/talic"
+                       android:textColor="@color/Coral"
+                       android:textStyle="bold" />
+
+                   <ImageView
+                       android:layout_gravity="center"
+                       android:layout_width="@dimen/_32sdp"
+                       android:layout_height="@dimen/_32sdp"
+                       android:scaleType="fitXY"
+                       android:layout_alignParentBottom="true"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="@dimen/_25sdp"
+                       android:src="@drawable/ic_baseline_camera_enhance_24"/>
+               </RelativeLayout>
+
+           </androidx.cardview.widget.CardView>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_16sdp"
+               android:layout_marginEnd="@dimen/_10sdp"
+               android:layout_marginStart="@dimen/_10sdp"
+               style="@style/OutlinedRoundedBox"
+               android:textColorHint="@color/white"
+               app:hintEnabled="false">
+
+               <EditText
+                   android:background="@drawable/edit_backgroud"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:ems="10"
+                   android:hint="Building  Name"
+                   android:id="@+id/edit_buildingTitle"
+                   android:inputType="text"
+                   android:importantForAutofill="no"
+                   android:paddingLeft="8dp"
+                   android:textColorHighlight="@color/white"
+                   android:textColor="@color/white"
+                   android:textColorHint="@color/white" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_16sdp"
+               android:layout_marginEnd="@dimen/_10sdp"
+               android:layout_marginStart="@dimen/_10sdp"
+               style="@style/OutlinedRoundedBox"
+               app:boxStrokeColor="@color/white"
+               app:boxStrokeWidth="@dimen/_1sdp"
+               android:textColorHint="@color/white"
+               app:hintEnabled="false">
+
+               <EditText
+                   android:background="@drawable/edit_backgroud"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:ems="10"
+                   android:hint="Company Name"
+                   android:id="@+id/edit_StcompanyName"
+                   android:inputType="text"
+                   android:maxLines="1"
+                   android:importantForAutofill="no"
+                   android:paddingLeft="8dp"
+                   android:textColorHighlight="@color/white"
+                   android:textColor="@color/white"
+                   android:textColorHint="@color/white" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_16sdp"
+               android:layout_marginEnd="@dimen/_10sdp"
+               android:layout_marginStart="@dimen/_10sdp"
+               style="@style/OutlinedRoundedBox"
+               app:boxStrokeColor="@color/white"
+               app:boxStrokeWidth="@dimen/_1sdp"
+               android:textColorHint="@color/white"
+               app:hintEnabled="false">
+
+
+               <EditText
+                   android:background="@drawable/edit_backgroud"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:ems="10"
+                   android:hint="Company Owner"
+                   android:id="@+id/edit_StcompanyOwner"
+                   android:inputType="text"
+                   android:maxLines="1"
+                   android:importantForAutofill="no"
+                   android:paddingLeft="8dp"
+                   android:textColorHighlight="@color/white"
+                   android:textColor="@color/white"
+                   android:textColorHint="@color/white" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_marginTop="@dimen/_16sdp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center">
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="0dp"
+                   android:layout_marginEnd="@dimen/_4sdp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:layout_marginStart="@dimen/_10sdp"
+                   style="@style/OutlinedRoundedBox"
+                   app:boxStrokeColor="@color/white"
+                   app:boxStrokeWidth="@dimen/_1sdp"
+                   android:textColorHint="@color/white"
+                   app:hintEnabled="false">
+
+                   <EditText
+                       android:background="@drawable/edit_backgroud"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:hint="License Approved Date"
+                       android:inputType="date"
+                       android:enabled="false"
+                       android:id="@+id/edit_license_approved"
+                       android:maxLines="1"
+                       android:importantForAutofill="no"
+                       android:textColorHighlight="@color/white"
+                       android:textColor="@color/white"
+                       android:textColorHint="@color/white" />
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <ImageButton
+                   android:id="@+id/License_ApprovedBtn"
+                   android:layout_width="0dp"
+                   android:padding="@dimen/_5sdp"
+                   android:layout_marginRight="@dimen/_7sdp"
+                   android:layout_height="@dimen/_40sdp"
+                   android:layout_weight="1"
+                   android:drawableTint="@color/white"
+                   android:background="@drawable/round_button"
+                   android:src="@drawable/ic_baseline_date_range_24"
+                   android:tint="@color/white"
+                   android:paddingLeft="@dimen/_25sdp" />
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_marginTop="@dimen/_16sdp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center">
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="0dp"
+                   android:layout_marginEnd="@dimen/_4sdp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:layout_marginStart="@dimen/_10sdp"
+                   style="@style/OutlinedRoundedBox"
+                   app:boxStrokeColor="@color/white"
+                   app:boxStrokeWidth="@dimen/_1sdp"
+                   android:textColorHint="@color/white"
+                   app:hintEnabled="false">
+
+                   <EditText
+                       android:background="@drawable/edit_backgroud"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:hint="License Renew Date"
+                       android:inputType="date"
+                        android:id="@+id/editLicense_renewDate"
+                       android:maxLines="1"
+                       android:enabled="false"
+                       android:importantForAutofill="no"
+                       android:textColorHighlight="@color/white"
+                       android:textColor="@color/white"
+                       android:textColorHint="@color/white" />
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <ImageButton
+                   android:id="@+id/License_Renew_btn"
+                   android:layout_width="0dp"
+                   android:padding="@dimen/_5sdp"
+                   android:layout_marginRight="@dimen/_7sdp"
+                   android:layout_height="@dimen/_45sdp"
+                   android:layout_weight="1"
+                   android:src="@drawable/ic_baseline_date_range_24"
+                   android:tint="@color/white"
+                   android:drawableTint="@color/white"
+                   android:background="@drawable/round_button"
+                   android:paddingLeft="@dimen/_25sdp" />
+           </LinearLayout>
+
+           <Spinner
+               android:id="@+id/storag_flat_spinner"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_50sdp"
+               android:layout_marginStart="@dimen/_10sdp"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_marginEnd="@dimen/_10sdp"
+               android:entries="@array/company_flat"
+               android:background="@drawable/spinner_style"
+               android:padding="@dimen/_15sdp" />
+
+           <Spinner
+               android:id="@+id/storag_division_spinner"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_50sdp"
+               android:layout_marginStart="@dimen/_10sdp"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_marginEnd="@dimen/_10sdp"
+               android:background="@drawable/spinner_style"
+               android:padding="@dimen/_15sdp" />
+
+           <Spinner
+               android:id="@+id/storag_distric_spinner"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_50sdp"
+               android:layout_marginStart="@dimen/_10sdp"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_marginEnd="@dimen/_10sdp"
+               android:background="@drawable/spinner_style"
+               android:padding="@dimen/_15sdp" />
+
+           <Spinner
+               android:id="@+id/storag_thana_spinner"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_50sdp"
+               android:layout_marginStart="@dimen/_10sdp"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_marginEnd="@dimen/_10sdp"
+               android:background="@drawable/spinner_style"
+               android:padding="@dimen/_15sdp" />
+
+           <Spinner
+               android:id="@+id/alertTag_spinner"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_50sdp"
+               android:layout_marginStart="@dimen/_10sdp"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_marginEnd="@dimen/_10sdp"
+               android:background="@drawable/spinner_style"
+               android:padding="@dimen/_15sdp" />
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_16sdp"
+               android:layout_marginEnd="@dimen/_10sdp"
+               android:layout_marginStart="@dimen/_10sdp"
+               style="@style/OutlinedRoundedBox"
+               app:boxStrokeColor="@color/white"
+               app:boxStrokeWidth="@dimen/_1sdp"
+               android:textColorHint="@color/white"
+               app:hintEnabled="false">
+
+               <EditText
+                   android:background="@drawable/edit_backgroud"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:ems="10"
+                   android:hint="Company Type"
+                   android:id="@+id/editStorage_CompanyType"
+                   android:inputType="text"
+                   android:maxLines="1"
+                   android:importantForAutofill="no"
+                   android:paddingLeft="8dp"
+                   android:textColorHighlight="@color/white"
+                   android:textColor="@color/white"
+                   android:textColorHint="@color/white" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_marginEnd="@dimen/_10sdp"
+               android:layout_marginStart="@dimen/_10sdp"
+               style="@style/OutlinedRoundedBox"
+               app:boxStrokeColor="@color/white"
+               app:boxStrokeWidth="@dimen/_1sdp"
+               android:textColorHint="@color/white"
+               app:hintEnabled="false">
+
+               <EditText
+                   android:background="@drawable/edit_backgroud"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:ems="10"
+                   android:hint="Company Details"
+                   android:id="@+id/edit_Companydetails"
+                   android:inputType="text"
+                   android:importantForAutofill="no"
+                   android:paddingLeft="8dp"
+                   android:textColorHighlight="@color/white"
+                   android:textColor="@color/white"
+                   android:textColorHint="@color/white" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_marginEnd="@dimen/_10sdp"
+               android:layout_marginStart="@dimen/_10sdp"
+               style="@style/OutlinedRoundedBox"
+               app:boxStrokeColor="@color/white"
+               app:boxStrokeWidth="@dimen/_1sdp"
+               android:textColorHint="@color/white"
+               app:hintEnabled="false">
+
+
+               <EditText
+                   android:background="@drawable/edit_backgroud"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:ems="10"
+                   android:hint="Company Location"
+                   android:id="@+id/editStorage_CompanyLocation"
+                   android:inputType="text"
+                   android:importantForAutofill="no"
+                   android:paddingLeft="8dp"
+                   android:enabled="false"
+                   android:textColorHighlight="@color/white"
+                   android:textColor="@color/white"
+                   android:textColorHint="@color/white" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <ImageView
+          android:layout_marginTop="@dimen/_10sdp"
+          android:layout_marginLeft="@dimen/_16sdp"
+          android:layout_marginRight="@dimen/_16sdp"
+          android:layout_width="match_parent"
+          android:scaleType="fitXY"
+          android:id="@+id/imgeViewchoose_map"
+          android:layout_height="@dimen/_100sdp"
+          android:src="@drawable/mapp"/>
+
+
+           <info.hoang8f.widget.FButton
+               android:layout_marginBottom="@dimen/_10sdp"
+               android:id="@+id/subit_storage"
+               android:layout_width="match_parent"
+               android:backgroundTint="@color/Indigo"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_15sdp"
+               android:padding="@dimen/_5sdp"
+               android:fontFamily="@font/talic"
+               android:text="Submit"
+               android:layout_marginStart="@dimen/_20sdp"
+               android:layout_marginEnd="@dimen/_20sdp"
+               android:textAllCaps="false"
+               android:textColor="@color/white"
+               android:textSize="16sp"
+               android:textStyle="normal" />
+
+       </LinearLayout>
+   </ScrollView>
+
+
+</RelativeLayout>

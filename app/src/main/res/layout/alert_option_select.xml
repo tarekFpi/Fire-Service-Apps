@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/button_flat_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/WhatsApp"
+        android:text="Flat"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        />
+
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/floating_alert"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/WhatsApp"
+        android:text="Alert"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+      />
+</LinearLayout>
+</RelativeLayout>

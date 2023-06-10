@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_user"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context="com.techno71.fireservice.View.UserMapsActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <com.google.android.material.appbar.AppBarLayout
+           android:id="@+id/appbar_id"
+           android:background="@color/Coral"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <androidx.appcompat.widget.Toolbar
+               android:id="@+id/toolbar_usermap"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:titleTextColor="@color/White"
+               android:textAlignment="center"
+               app:title="@string/Map"
+
+               android:layout_gravity="center"
+               />
+       </com.google.android.material.appbar.AppBarLayout>
+
+       <SearchView
+           android:layout_marginEnd="@dimen/_10sdp"
+           android:layout_marginStart="@dimen/_10sdp"
+           android:layout_below="@+id/appbar_id"
+           android:layout_width="match_parent"
+           android:iconifiedByDefault="false"
+           android:queryHint="@string/Search_Here"
+           android:background="@drawable/search_shap"
+           android:elevation="@dimen/_5sdp"
+           android:layout_marginTop="@dimen/_8sdp"
+           android:layout_height="wrap_content"/>
+
+
+       <fragment
+           android:id="@+id/map"
+           android:name="com.google.android.gms.maps.SupportMapFragment"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           tools:context="com.techno71.fireservice.View.UserMapsActivity" />
+
+
+
+       <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+           android:id="@+id/bottomNavigation"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_gravity="bottom"
+           android:visibility="gone"
+           app:mbn_backgroundBottomColor="#ffffff"
+           app:mbn_circleColor="#ffffff"
+           app:mbn_countBackgroundColor="#ff6f00"
+           app:mbn_countTextColor="#ffffff"
+           app:mbn_countTypeface="fonts/regular.ttf"
+           app:mbn_defaultIconColor="#323333"
+           app:mbn_rippleColor="#2f424242"
+           app:mbn_selectedIconColor="#3c415e"
+           app:mbn_shadowColor="#1f212121" />
+
+   </RelativeLayout>
+
+
+    <com.rom4ek.arcnavigationview.ArcNavigationView
+        android:id="@+id/navigation_user"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/backgroud_second"
+        android:fitsSystemWindows="true"
+        app:arc_cropDirection="cropOutside"
+        app:arc_width="96dp"
+        app:menu="@menu/sidmenu_user"
+        map:itemTextColor="@color/white"
+        map:itemIconTint="@color/white"
+        app:itemBackground="@drawable/side_menu_broder"
+        app:itemIconSize="18dp"/>
+</androidx.drawerlayout.widget.DrawerLayout>
+
+

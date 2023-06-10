@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_7sdp"
+    app:cardElevation="@dimen/_7sdp"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardMaxElevation="@dimen/_7sdp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/backgroud_second"
+        android:paddingBottom="@dimen/_7sdp"
+        android:id="@+id/relative_newsToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <androidx.cardview.widget.CardView
+           android:layout_marginTop="@dimen/_8sdp"
+           android:id="@+id/cardview_image"
+           android:layout_margin="@dimen/_5sdp"
+           app:cardMaxElevation="@dimen/_7sdp"
+           app:cardElevation="@dimen/_7sdp"
+           app:cardCornerRadius="@dimen/_7sdp"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_130sdp">
+
+           <ImageView
+               android:id="@+id/news_Image"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:elevation="@dimen/_8sdp"
+               android:scaleType="fitXY"
+               android:src="@drawable/new1" />
+       </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text_newstitleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardview_image"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/talic"
+            android:text="Name: Techo-71"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp" />
+
+
+      <!--  <RelativeLayout
+            android:padding="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_newsUpdate"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:background="@drawable/comment_back">
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/newsfullDescrt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/talic"
+                android:text="@string/full_descriptionNews"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <ImageView
+                android:id="@+id/image_arrow_drop_down"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>-->
+
+
+        <TextView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/text_newsUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_newstitleName"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_6sdp"
+            android:fontFamily="@font/talic"
+            android:text="Date:22-7-2022 10:00 Pm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_8sdp"
+    android:layout_margin="@dimen/_6sdp"
+    app:cardMaxElevation="@dimen/_10sdp"
+    app:cardElevation="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/text_userCommentImage"
+            android:layout_width="@dimen/_64sdp"
+            android:layout_height="@dimen/_64sdp"
+            android:src="@drawable/gg"
+            app:civ_border_color="#3f51b5"
+            app:civ_border_width="1dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#3f51b5"
+            app:civ_shadow_radius="@dimen/_4sdp" />
+
+       <LinearLayout
+
+           android:layout_centerVertical="true"
+           android:layout_toRightOf="@+id/text_userCommentImage"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_margin="@dimen/_5sdp"
+               android:gravity="center_vertical"
+               android:textColor="@color/black"
+               android:textSize="@dimen/_14sdp"
+               android:id="@+id/text_comment_status"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="To make a circular ImageView add CircularImageView in your layout"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/text_comment_status"
+            android:layout_toRightOf="@+id/text_userCommentImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/WhatsApp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7:50 PM 2022-5-8"/>
+
+            <TextView
+
+                android:layout_alignParentRight="true"
+                android:textColor="@color/WhatsApp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2km"/>
+        </RelativeLayout>
+       </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

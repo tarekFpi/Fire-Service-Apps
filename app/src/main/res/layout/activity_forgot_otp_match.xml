@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_second"
+    tools:context=".View.ForgotOtpMatch">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_id"
+        android:background="@color/Coral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_forOtpMatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/White"
+            app:title="@string/forgorpasswordOtp"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_below="@+id/appbar_id"
+        android:id="@+id/aminmation_id"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/otp" />
+
+    <ScrollView
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/aminmation_id"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_otpTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/talic"
+                android:text="@string/otp_verfication"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp" />
+
+            <TextView
+                android:id="@+id/text_otp_SubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_otpTitle"
+                android:layout_marginTop="15dp"
+                android:text="@string/enter_the_otp_send_to_your"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/text_forgetPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_otp_SubTitle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="+88:01XXXXXXXXX"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@+id/text_forgetPhone"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                app:cardCornerRadius="@dimen/_12sdp"
+                app:cardMaxElevation="@dimen/_7sdp"
+                android:id="@+id/cardview_dynamic_List"
+                >
+
+                <RelativeLayout
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/otpLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/black"
+                            android:layout_marginLeft="8dp"
+                            android:layout_width="45dp"
+                            android:id="@+id/edit_forgotcod1"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:inputType="number"
+                            android:layout_height="45dp"
+                            android:importantForAutofill="no"/>
+
+
+                        <EditText
+                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/black"
+                            android:layout_marginLeft="8dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:id="@+id/edit_forgotcod2"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:inputType="number"
+                            android:importantForAutofill="no"/>
+
+                        <EditText
+                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/black"
+                            android:layout_marginLeft="8dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:id="@+id/edit_forgotcod3"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:inputType="number"
+                            android:importantForAutofill="no"/>
+
+                        <EditText
+                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/black"
+                            android:layout_marginLeft="8dp"
+                            android:layout_width="45dp"
+                            android:id="@+id/edit_forgotcod4"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:inputType="number"
+                            android:layout_height="45dp"
+                            android:importantForAutofill="no"/>
+
+                        <EditText
+                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/black"
+                            android:layout_marginLeft="8dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:id="@+id/edit_forgotcod5"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:inputType="number"
+                            android:importantForAutofill="no"/>
+
+
+                        <EditText
+                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/black"
+                            android:layout_marginLeft="8dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:id="@+id/edit_forgotcod6"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:importantForAutofill="no"/>
+                    </LinearLayout>
+
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/viefiy_forgotbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/otpLayout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:backgroundTint="@color/Indigo"
+                        android:onClick="VerifyForgot_btn"
+                        android:text="@string/verify_button"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

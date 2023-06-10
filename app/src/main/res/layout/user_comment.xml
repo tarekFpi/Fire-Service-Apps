@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_8sdp"
+    app:cardMaxElevation="@dimen/_8sdp"
+    android:layout_height="@dimen/_200sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:id="@+id/TextInputLayout_comment"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            style="@style/OutlinedRoundedBox"
+            app:hintEnabled="false"
+            app:boxStrokeColor="@color/black"
+            >
+
+            <EditText
+                android:padding="@dimen/_15sdp"
+                android:hint="Tell Us Something"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/editText_userComment"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinner_Usercolor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/TextInputLayout_comment"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/drop_drown"
+            android:entries="@array/user_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_Usercolor"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+          <info.hoang8f.widget.FButton
+              android:layout_width="@dimen/_80sdp"
+              android:id="@+id/userComment_submit"
+              android:backgroundTint="@color/WhatsApp"
+              android:text="Submit"
+              android:textColor="@color/white"
+              android:layout_height="wrap_content"/>
+
+            <info.hoang8f.widget.FButton
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_width="@dimen/_80sdp"
+                android:id="@+id/userComment_close"
+                android:text="Close"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/WhatsApp"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

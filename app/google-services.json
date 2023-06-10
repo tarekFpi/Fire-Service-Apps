@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "13752696143",
+    "firebase_url": "https://firenotification-c8fd9-default-rtdb.firebaseio.com",
+    "project_id": "firenotification-c8fd9",
+    "storage_bucket": "firenotification-c8fd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13752696143:android:21b73101690fb8a9d6193a",
+        "android_client_info": {
+          "package_name": "com.techno71.fireservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13752696143-ejv7vosgqrtgnoeiam1b5kh8b4u8qthh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8gP9xBDvSRMTiifq9-C-mxXiiTquAKPg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13752696143-ejv7vosgqrtgnoeiam1b5kh8b4u8qthh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

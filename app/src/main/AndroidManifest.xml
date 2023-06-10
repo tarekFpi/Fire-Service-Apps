@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+        <activity
+            android:name=".View.BookMarkActivity"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+
+             AIzaSyDjCh3TS5G8Su8FkHacIUQtjuea968H3ys
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/title_activity_company_maps" />
+
+        <activity
+            android:name=".View.Storage_MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_company_maps" />
+
+        <activity
+            android:name=".View.StorageAddActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".View.ImagePickerActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".View.DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.SingleNewsShowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.CompanyVerify_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".View.ForgotNewpassword"
+            android:exported="false" />
+        <activity
+            android:name=".View.ForgotOtpMatch"
+            android:exported="false" />
+        <activity
+            android:name=".View.ForgotPassword"
+            android:exported="false" />
+
+        <activity
+            android:name=".View.Setting_Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".View.Otp_Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".View.Profile_EditActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".View.InformationLoddingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".View.TestActivity"
+            android:exported="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+
+        <activity
+            android:name=".View.CompanyMapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_company_maps" />
+
+        <activity
+            android:name=".View.FireMapActivity"
+            android:exported="true"></activity>
+
+        <activity
+            android:name=".View.LoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".View.Admin_MarkDetailsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".View.AdminMapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_admin_maps" />
+
+        <activity
+            android:name=".View.UserMapActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".View.UserMapsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".View.RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".View.LoginOtpVerify"
+            android:exported="false" />
+
+        <activity
+            android:name=".View.AnimationActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <service
+            android:name=".Model.MessagingService"
+            android:exported="true"
+            android:permission="TODO"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

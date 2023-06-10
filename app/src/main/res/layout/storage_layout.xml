@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroud_second"
+    android:layout_height="match_parent">
+
+  <!--  <com.google.android.material.floatingactionbutton.FloatingActionButton
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:backgroundTint="@color/Orange"
+         android:id="@+id/AddStrog_alertlocation"
+        android:paddingBottom="@dimen/_6sdp"
+        android:src="@drawable/ic_baseline_add"
+        app:fabSize="auto" />
+
+
+    <TextView
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:padding="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:text="Adderss"
+        android:id="@+id/text_addressStorg2"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        android:background="@drawable/search_shap"
+        android:elevation="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_height="wrap_content"/>
+
+    <fragment
+        android:id="@+id/map_storage2"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/pin" />-->
+</RelativeLayout>

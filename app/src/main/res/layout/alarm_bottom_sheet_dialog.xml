@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:seekarc="http://schemas.android.com/tools"
+    android:layout_height="@dimen/_280sdp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_message"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/doppio_one"
+            android:text="@string/please_select_terms_conditions_for_default_notification"
+            android:textColor="@color/Tomato"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:textColorHint="@color/WhatsApp"/>
+
+        <Spinner
+            android:id="@+id/alertType_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/spinner_broder_bott"
+            android:padding="@dimen/_10sdp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            app:hintEnabled="false"
+            style="@style/OutlinedRoundedBox"
+             >
+
+
+
+            <EditText
+                android:visibility="gone"
+                android:padding="@dimen/_10sdp"
+                android:importantForAutofill="no"
+                android:id="@+id/edit_userMessag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/message"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:paddingBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@color/WhatsApp"
+                android:id="@+id/check_Terms_Conditions"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/if_notification_is_sent_without_any_reason_legal_action_will_be_taken_against_him"
+                android:textColor="@color/Red"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/doppio_one"
+                android:textStyle="bold"
+                android:paddingBottom="@dimen/_8sdp"
+                android:textColorHint="@color/Red"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/linearLayout_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.techno71.fireservice.Circle
+            android:id="@+id/curve_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tapandhold_buttonHeight_outter"
+            android:layout_centerHorizontal="true"
+            android:background="@color/transparent" />
+
+        <LinearLayout
+            android:id="@+id/layouttap"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tapandhold_buttonHeight_middle"
+            android:background="@drawable/background"
+            android:paddingTop="@dimen/curve_width">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tapandhold_buttonHeight_inner"
+                android:background="@drawable/tapbg"
+                android:orientation="vertical">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tap_hold_bkash_logo"
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="20.0dip"
+                    android:src="@drawable/app_icon" />
+
+                <TextView
+                    android:id="@+id/info_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tap_hold_bkash_logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:fontFamily="@font/doppio_one"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:text="Tap for notification"
+                    app:autoSizePresetSizes="@array/autosize_text_sizes"
+                    app:autoSizeTextType="uniform" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

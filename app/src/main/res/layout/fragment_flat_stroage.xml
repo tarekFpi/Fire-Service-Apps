@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroud_colors"
+    tools:context=".Fragment.FlatStroageFragment">
+
+   <LinearLayout
+       android:layout_centerInParent="true"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:id="@+id/edit_flatTile"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/_16sdp"
+           android:layout_marginEnd="@dimen/_10sdp"
+           android:layout_marginStart="@dimen/_10sdp"
+           style="@style/OutlinedRoundedBox"
+           app:boxStrokeColor="@color/white"
+           app:boxStrokeWidth="@dimen/_1sdp"
+           android:textColorHint="@color/white"
+           app:hintEnabled="false">
+
+           <EditText
+               android:background="@drawable/edit_backgroud"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:ems="10"
+               android:hint="Company Type"
+               android:id="@+id/editStorage_CompanyType"
+               android:inputType="text"
+               android:maxLines="1"
+               android:textCursorDrawable="@color/white"
+               android:importantForAutofill="no"
+               android:paddingLeft="8dp"
+               android:textColorHighlight="@color/black"
+               android:textColor="@color/white"
+               android:textColorHint="@color/white" />
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <Spinner
+           android:layout_below="@+id/edit_flatTile"
+           android:id="@+id/storag_division_spinner"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_50sdp"
+           android:layout_marginStart="@dimen/_10sdp"
+           android:layout_marginTop="@dimen/_15sdp"
+           android:layout_marginEnd="@dimen/_10sdp"
+           android:background="@drawable/spinner_style"
+           android:padding="@dimen/_15sdp" />
+   </LinearLayout>
+
+</RelativeLayout>

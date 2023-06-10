@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_second"
+    tools:context="com.techno71.fireservice.View.LoginActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_id"
+        android:background="@color/Coral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_userSingUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/White"
+            app:title="@string/login_page"
+            />
+     </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_above="@+id/text_login_singUp"
+        android:layout_below="@+id/appbar_id"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:id="@+id/l1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view"
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_160sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:scaleType="fitXY"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/change_pass" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/l1"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    style="@style/OutlinedRoundedBox"
+                    app:hintEnabled="false">
+
+
+                    <EditText
+                        android:background="@drawable/edit_backgroud"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:hint="@string/phone_numberlog"
+                        android:id="@+id/edit_usernumber"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:importantForAutofill="no"
+                        android:paddingLeft="8dp"
+                        android:textColorHighlight="@color/white"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:textColorHint="@color/white"
+                    style="@style/OutlinedRoundedBox"
+                    app:hintEnabled="false"
+                    app:passwordToggleTint="@color/white"
+                    app:passwordToggleEnabled="true">
+
+
+                    <EditText
+                        android:focusable="true"
+                        android:background="@drawable/edit_backgroud"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:focusableInTouchMode="true"
+                        android:importantForAutofill="no"
+                        android:id="@+id/edit_userPasswrod"
+                        android:hint="@string/password_log"
+                        android:inputType="textPassword"
+                        android:paddingLeft="8dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:id="@+id/forgetandsave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/rememberMe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:buttonTint="@color/white"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/save_password"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/txt_loging_forgotPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:text="@string/forgotten_passwordLog"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+                </RelativeLayout>
+
+                <info.hoang8f.widget.FButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:backgroundTint="@color/Indigo"
+                    android:text="@string/login"
+                    android:fontFamily="@font/cambay"
+                    android:textAllCaps="false"
+                    android:onClick="Login_home"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+          </RelativeLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/text_login_singUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/talic"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/don_t_have_an_account_sign_up"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

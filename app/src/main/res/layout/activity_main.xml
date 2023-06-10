@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.techno71.fireservice.MainActivity">
+
+    <com.techno71.fireservice.Circle
+        android:id="@+id/curve2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tapandhold_buttonHeight_outter"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent" />
+
+   <LinearLayout
+        android:id="@+id/layouttap2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tapandhold_buttonHeight_middle"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background"
+        android:paddingTop="@dimen/curve_width">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tapandhold_buttonHeight_inner"
+            android:background="@drawable/tapbg"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/tap_hold_bkash_logo"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="22.0dip"
+                android:src="@drawable/app_icon" />
+
+            <TextView
+                android:id="@+id/info_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tap_hold_bkash_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_10"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="Tap for notification"
+                app:autoSizePresetSizes="@array/autosize_text_sizes"
+                app:autoSizeTextType="uniform" />
+        </RelativeLayout>
+    </LinearLayout>-->
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+
+        <item android:title="@string/home_com"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:id="@+id/sideCom_home"
+            android:iconTint="@color/white"
+            />
+
+        <item android:title="@string/profile_com"
+            android:id="@+id/sideCom_profile"
+            android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+            />
+
+        <item android:title="@string/bookmarks_com"
+            android:id="@+id/sideCom_Bookmarks"
+            android:icon="@drawable/ic_baseline_bookmarks_24"
+            />
+
+          <item android:title="@string/password_changeCom"
+              android:id="@+id/side_ComchangePassword"
+              android:icon="@drawable/ic_baseline_lock_24"
+            />
+
+        <item android:title="@string/setting_com"
+            android:iconTint="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:id="@+id/SideCom_setting"
+            android:icon="@drawable/ic_baseline_lock_open_24"
+            />
+
+        <item android:title="@string/add_Comstorage"
+            android:iconTint="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:id="@+id/SideCom_addStorage"
+            android:icon="@drawable/ic_baseline_lock_open_24"
+            />
+
+        <item android:title="@string/my_Comcomment"
+            android:iconTint="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:id="@+id/SideCom_mycomment"
+            android:icon="@drawable/ic_baseline_comment"
+            />
+
+        <item android:title="@string/news_com"
+            android:iconTint="@color/white"
+            android:id="@+id/SideCom_news"
+            android:fontFamily="@font/poppins_semibold"
+            android:icon="@drawable/ic_baseline_newspaper_24"
+            />
+
+        <item android:title="@string/help_center_phone_callCom"
+            android:iconTint="@color/white"
+            android:id="@+id/Sidecom_call"
+            android:fontFamily="@font/poppins_semibold"
+            android:icon="@drawable/ic_baseline_phone_24"
+            />
+
+
+        <item android:title="@string/logout_com"
+            android:id="@+id/Side_ComlogOut"
+            android:icon="@drawable/ic_baseline_lock_open_24"
+            />
+    </group>
+
+</menu>

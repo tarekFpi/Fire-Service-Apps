@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_colors"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.UserProfile_Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                android:id="@+id/cardView_1"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="12dp"
+                app:cardMaxElevation="7dp"
+                >
+
+                <RelativeLayout
+                    android:background="@drawable/backgroud_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/user_profileImage"
+                            android:background="@drawable/circal_bag"
+                            android:layout_width="@dimen/_65sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_height="@dimen/_65sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/gg" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textProfilFullName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/talic"
+                                android:text="@string/fullName"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_16sdp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:background="@color/white" />
+
+                            <RelativeLayout
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:id="@+id/layout_editProfile"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_24sdp"
+                                        android:layout_height="@dimen/_24sdp"
+                                        android:tint="@color/profile"
+                                        android:src="@drawable/ic_baseline_edit_calendar_24"/>
+
+                                    <ImageView
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="@dimen/_24sdp"
+                                        android:layout_height="@dimen/_24sdp"
+                                        android:tint="@color/profile"
+                                        android:src="@drawable/ic_baseline_lock_24"/>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_toRightOf="@+id/layout_editProfile"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/editprofile"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="@dimen/_10sdp"
+                                        android:fontFamily="@font/talic"
+                                        android:padding="@dimen/_4sdp"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:foreground="?android:attr/selectableItemBackground"
+                                        android:text="@string/edit_profileButton"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_16sdp" />
+
+                                    <TextView
+                                        android:id="@+id/editPass"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="@dimen/_7sdp"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:foreground="?android:attr/selectableItemBackground"
+                                        android:layout_marginTop="@dimen/_15sdp"
+                                        android:fontFamily="@font/talic"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/edit_passwordButton"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_16sdp" />
+
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <TextView
+                                android:visibility="gone"
+                                android:id="@+id/CompanyVerifyStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_7sdp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:padding="@dimen/_5sdp"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/talic"
+                                android:gravity="center_vertical"
+                                android:text="Status"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_16sdp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+         <androidx.cardview.widget.CardView
+               app:cardBackgroundColor="@color/profile"
+                android:layout_below="@+id/cardView_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_12sdp"
+                app:cardMaxElevation="@dimen/_7sdp"
+                >
+
+                <LinearLayout
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_12sdp"
+                        app:cardMaxElevation="@dimen/_7sdp"
+                        >
+                        <RelativeLayout
+                            android:padding="@dimen/_10sdp"
+                           android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/UserPfname_bann"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:textAlignment="textStart"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/talic"
+                                android:text="@string/name_bann"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <TextView
+                                android:layout_toRightOf="@+id/UserPfname_bann"
+                                android:id="@+id/dot_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:text=":"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_18sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_profileName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_7sdp"
+                                android:layout_toRightOf="@+id/dot_1"
+                                android:fontFamily="@font/talic"
+                                android:text="@string/name"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_12sdp"
+                        app:cardMaxElevation="@dimen/_7sdp"
+                        >
+
+                        <RelativeLayout
+                            android:padding="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/phonebanner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/talic"
+                                android:text="@string/phone_bann"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <TextView
+                                android:layout_toRightOf="@+id/phonebanner"
+                                android:id="@+id/dot_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:text=":"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_18sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_profilePhone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_toRightOf="@+id/dot_3"
+                                android:fontFamily="@font/talic"
+                                android:text="@string/phone"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_12sdp"
+                        app:cardMaxElevation="@dimen/_7sdp"
+                        >
+
+                        <RelativeLayout
+                            android:padding="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/user_bannerAddres"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/talic"
+                                android:text="@string/address_bann"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <TextView
+                                android:layout_toRightOf="@+id/user_bannerAddres"
+                                android:id="@+id/dot_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:text=":"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_18sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_address_bann"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_toRightOf="@+id/dot_2"
+                                android:fontFamily="@font/talic"
+                                android:text="@string/address"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_12sdp"
+                        app:cardMaxElevation="@dimen/_7sdp"
+                        >
+
+                        <RelativeLayout
+                            android:padding="@dimen/_10sdp"
+                            android:layout_centerInParent="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:id="@+id/email_bann"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/talic"
+                                android:text="@string/email_bann"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <TextView
+                                android:layout_toRightOf="@+id/email_bann"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:id="@+id/dot_4"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_18sdp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:text=":"/>
+
+                            <TextView
+                                android:id="@+id/text_profileEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:layout_toRightOf="@+id/dot_4"
+                                android:text="@string/gmail"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                android:fontFamily="@font/talic"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_12sdp"
+                        app:cardMaxElevation="@dimen/_7sdp"
+                        >
+
+                        <RelativeLayout
+                            android:padding="@dimen/_10sdp"
+                            android:layout_centerInParent="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/gender_bann"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/gender_bann"
+                                android:textSize="@dimen/_14sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/talic"
+                                android:textColor="@color/black"
+                                />
+
+                            <TextView
+                                android:layout_toRightOf="@+id/gender_bann"
+                                android:id="@+id/dot_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:text=":"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_18sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_profileSex"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_toRightOf="@+id/dot_5"
+                                android:text="@string/gender"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                android:fontFamily="@font/talic"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_12sdp"
+                        app:cardMaxElevation="@dimen/_7sdp"
+                        >
+
+                        <RelativeLayout
+                            android:padding="@dimen/_10sdp"
+                            android:layout_centerInParent="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/date_of_birth_bann"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="@string/date_of_birth_bann"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/talic"
+                                />
+
+                            <TextView
+                                android:layout_toRightOf="@+id/date_of_birth_bann"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:id="@+id/dot_6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_18sdp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:text=":"/>
+
+                            <TextView
+                                android:id="@+id/text_profileDayBith"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:layout_toRightOf="@+id/dot_6"
+                                android:text="@string/date_bith"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                android:fontFamily="@font/talic"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_12sdp"
+                        app:cardMaxElevation="@dimen/_7sdp"
+                        >
+                        <RelativeLayout
+                            android:padding="@dimen/_10sdp"
+                            android:layout_centerInParent="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:id="@+id/religion_bann"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/talic"
+                                android:text="@string/religion_bann"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/religion_bann"
+                                android:id="@+id/dot_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:text=":"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_18sdp" />
+
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:id="@+id/text_profileReligion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_7sdp"
+                                android:layout_toRightOf="@+id/dot_7"
+                                android:text="@string/religion"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                android:fontFamily="@font/talic"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_12sdp"
+                        app:cardMaxElevation="@dimen/_7sdp"
+                       >
+                        <RelativeLayout
+                            android:padding="@dimen/_10sdp"
+                            android:layout_centerInParent="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:id="@+id/traders_licence_bann"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/talic"
+                                android:text="@string/traders_licence_bann"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/traders_licence_bann"
+                                android:id="@+id/dot_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:text=":"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_18sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_toRightOf="@+id/dot_11"
+                                android:fontFamily="@font/talic"
+                                android:text="@string/traders_licence"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_12sdp"
+                        app:cardMaxElevation="@dimen/_7sdp"
+                        >
+
+                        <RelativeLayout
+                            android:padding="@dimen/_10sdp"
+                            android:layout_centerInParent="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:id="@+id/building_nobann"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/talic"
+                                android:text="@string/building_nobann"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <TextView
+                                android:layout_toRightOf="@+id/building_nobann"
+                                android:id="@+id/dot_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:text=":"
+                                android:layout_centerVertical="true"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_18sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_toRightOf="@+id/dot_12"
+                                android:text="@string/building_no"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/talic"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_12sdp"
+                        app:cardMaxElevation="@dimen/_7sdp"
+                        >
+
+                        <RelativeLayout
+                            android:padding="@dimen/_10sdp"
+                            android:layout_centerInParent="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/talic"
+                                android:layout_centerVertical="true"
+                                android:id="@+id/account_type_bann"
+                                android:layout_centerInParent="true"
+                                android:text="@string/account_type_bann"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <TextView
+                                android:layout_toRightOf="@+id/account_type_bann"
+                                android:id="@+id/dot_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:text=":"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_18sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                               android:layout_centerVertical="true"
+                                android:id="@+id/text_profileAccoutType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_toRightOf="@+id/dot_8"
+                                android:text="@string/user_bann"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/talic"
+                                android:textSize="@dimen/_14sdp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_12sdp"
+                        app:cardMaxElevation="@dimen/_7sdp"
+                        >
+
+                        <RelativeLayout
+                            android:padding="@dimen/_10sdp"
+                            android:layout_centerInParent="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/blood_groupbann"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/talic"
+                                android:text="@string/blood_groupbann"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <TextView
+                                android:layout_toRightOf="@+id/blood_groupbann"
+                                android:id="@+id/dot_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="8dp"
+                                android:text=":"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_18sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_profileBloode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_toRightOf="@+id/dot_9"
+                                android:text="@string/blood"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/talic"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>-->
+
+                </LinearLayout>
+
+           </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

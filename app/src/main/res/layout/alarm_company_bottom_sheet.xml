@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/please_select_terms_conditions_for_default_notification"
+            android:textColor="@color/Blue"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:textColorHint="@color/WhatsApp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            app:hintEnabled="false"
+            >
+
+
+            <EditText
+                android:padding="@dimen/_10sdp"
+                android:importantForAutofill="no"
+                android:id="@+id/edit_comMessag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_backgroud"
+                android:hint="Message"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:paddingBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/WhatsApp"
+                android:id="@+id/check_compTerms_Conditions"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/if_notification_is_sent_without_any_reason_legal_action_will_be_taken_against_him"
+                android:textColor="@color/Red"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:paddingBottom="@dimen/_8sdp"
+                android:textColorHint="@color/Red"/>
+        </LinearLayout>
+
+        <me.tankery.lib.circularseekbar.CircularSeekBar
+            android:id="@+id/CircularCom_SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            app:cs_circle_color="@color/white"
+            app:cs_circle_fill="@color/WhatsApp"
+            app:cs_circle_progress_color="@color/white"
+            app:cs_circle_stroke_width="@dimen/_8sdp"
+            app:cs_circle_style="butt"
+            app:cs_circle_x_radius="0dp"
+            app:cs_circle_y_radius="0dp"
+            app:cs_disable_pointer="true"
+            app:cs_disable_progress_glow="false"
+            app:cs_end_angle="11"
+            app:cs_hide_progress_when_empty="true"
+            app:cs_lock_enabled="true"
+            app:cs_maintain_equal_circle="false"
+            app:cs_max="100"
+            app:cs_move_outside_circle="true"
+            app:cs_negative_enabled="true"
+            app:cs_pointer_alpha_ontouch="0"
+            app:cs_pointer_angle="0"
+            app:cs_pointer_color="@color/DarkViolet"
+            app:cs_pointer_halo_border_width="0dp"
+            app:cs_pointer_halo_color="@color/WhatsApp"
+            app:cs_pointer_halo_width="@dimen/_8sdp"
+            app:cs_pointer_stroke_width="@dimen/_10sdp"
+            app:cs_progress="20"
+            app:cs_start_angle="170"
+            app:cs_use_custom_radii="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

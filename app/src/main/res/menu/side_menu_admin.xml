@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+
+        <item android:title="Home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:id="@+id/sideAd_home"
+            android:iconTint="@color/white"
+            />
+
+        <item android:title="@string/news_menu"
+            android:iconTint="@color/white"
+            android:id="@+id/SideAd_news"
+            android:fontFamily="@font/poppins_semibold"
+            android:icon="@drawable/ic_baseline_newspaper_24"
+            />
+
+        <item android:title="Profile"
+            android:id="@+id/sideAd_profile"
+            android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+            />
+
+
+
+        <item android:title="Password change"
+            android:id="@+id/side_AdchangePassword"
+            android:icon="@drawable/ic_baseline_lock_24"
+            />
+
+        <item android:title="@string/setting_usermenu"
+            android:iconTint="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:id="@+id/SideAd_setting"
+            android:icon="@drawable/ic_baseline_lock_open_24"
+            />
+
+
+        <item android:title="Logout"
+            android:id="@+id/Side_AdlogOut"
+            android:icon="@drawable/ic_baseline_lock_open_24"
+            />
+    </group>
+
+</menu>

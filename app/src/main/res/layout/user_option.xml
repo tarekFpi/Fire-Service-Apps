@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_10sdp"
+    android:layout_height="@dimen/_150sdp">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:backgroundTint="@color/WhatsApp"
+            android:id="@+id/Comment_user_company"
+            android:text="Comment"
+            android:textSize="@dimen/_10sdp"
+            android:textAllCaps="false"
+            style="@style/AppTheme"
+            app:iconTint="@color/white"
+            android:textColor="@color/white"
+            app:icon="@drawable/ic_baseline_comment_24"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            style="@style/AppTheme"
+            android:visibility="gone"
+            android:textSize="@dimen/_10sdp"
+            android:backgroundTint="@color/WhatsApp"
+            android:id="@+id/button_user_Bookmarker"
+            android:text="BookMark"
+            app:iconTint="@color/white"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:icon="@drawable/ic_baseline_mark_chat_read_24"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

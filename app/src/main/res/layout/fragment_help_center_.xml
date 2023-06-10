@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroud_second"
+    tools:context=".Fragment.HelpCenter_Fragment">
+
+    <RelativeLayout
+        android:background="#E89C78"
+        android:id="@+id/relative_Callprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:Tarek"
+            android:id="@+id/text_callUserName"
+            android:layout_margin="@dimen/_8sdp"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/doppio_one"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/text_callUserLocat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:fontFamily="@font/doppio_one"
+            android:text="Locatin:Dhaka"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+ <LinearLayout
+     android:layout_marginTop="@dimen/_20sdp"
+     android:gravity="center_horizontal"
+     android:layout_below="@+id/relative_Callprofile"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/emergency_help_n_needed"
+         android:textStyle="bold"
+         android:fontFamily="@font/doppio_one"
+         android:layout_centerHorizontal="true"
+         android:layout_margin="@dimen/_8sdp"
+         android:textColorHint="@color/white"
+         android:textSize="@dimen/_25sdp"
+         android:textColor="@color/white"/>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/just_hold_the_button_to_call"
+         android:textStyle="bold"
+         android:fontFamily="@font/doppio_one"
+         android:layout_centerHorizontal="true"
+         android:layout_margin="@dimen/_8sdp"
+         android:textColorHint="@color/white"
+         android:textSize="@dimen/_18sdp"
+         android:textColor="@color/white"/>
+ </LinearLayout>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view_call"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_centerInParent="true"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:scaleType="fitXY"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/phone_call" />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/_200sdp"
+        android:id="@+id/image_helpCall"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/btt1"/>
+
+</RelativeLayout>

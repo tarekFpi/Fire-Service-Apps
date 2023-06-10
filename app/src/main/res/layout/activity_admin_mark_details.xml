@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.techno71.fireservice.View.Admin_MarkDetailsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_id"
+        android:background="@color/WhatsApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_userSingUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/White"
+            app:title="@string/View_Information"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview_id"
+        android:layout_below="@+id/appbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/image_slider_homepage"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginEnd="20dp"
+                android:elevation="@dimen/_5sdp"
+                android:screenReaderFocusable="true"
+                app:sliderAnimationDuration="500"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderAutoCycleEnabled="true"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#5A5A5A"
+                app:sliderIndicatorUnselectedColor="@color/WhatsApp"
+                app:sliderScrollTimeInSec="1"
+                app:sliderStartAutoCycle="true" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imageview_institute"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/thumbnail" />
+
+            <TextView
+                android:id="@+id/text_instituteArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_slider_homepage"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="Techno-71, Malibagh Chowdhury Para Road, Dhaka"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <Spinner
+                android:layout_below="@+id/text_instituteArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_admincolor"
+                android:background="@drawable/spinner_style"
+                android:layout_margin="@dimen/_10sdp"/>
+
+  <LinearLayout
+    android:id="@+id/layout_toggle"
+    android:layout_margin="@dimen/_8sdp"
+   android:background="@drawable/comment_back"
+    android:layout_below="@+id/spinner_admincolor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<!--<RelativeLayout
+    android:visibility="gone"
+    android:layout_below="@+id/imageview_institute"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:text="Comment"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+         />
+</RelativeLayout>-->
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+         tools:listitem="@layout/comment_layout"
+          android:visibility="visible"
+          app:stackFromEnd="true"
+          android:layout_margin="@dimen/_6sdp"
+          android:layout_height="wrap_content"
+          android:id="@+id/recycelveiwComment"/>
+
+
+   </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_below="@+id/scrollview_id"
+        android:id="@+id/linearlayout_latlong"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@color/WhatsApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lat: 23.75534362718984"/>
+
+        <TextView
+            android:textColor="@color/WhatsApp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Long: 23.75534362718984"/>
+    </LinearLayout>
+</RelativeLayout>

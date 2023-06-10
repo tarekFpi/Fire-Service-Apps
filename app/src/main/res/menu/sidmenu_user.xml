@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+
+        <item android:title="@string/myhome"
+            android:fontFamily="@font/poppins_semibold"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:id="@+id/sideUser_home"
+            android:iconTint="@color/white"
+            />
+
+        <item android:title="@string/user_profilemenu"
+            android:iconTint="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:id="@+id/sideUser_profile"
+            android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+            />
+
+    <!--    <item android:title="Bookmarks"
+            android:id="@+id/sideUser_bookmark"
+            android:icon="@drawable/ic_baseline_bookmarks_24"
+            />-->
+
+        <item android:title="@string/password_usermenu"
+            android:iconTint="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:id="@+id/sideUser_changePassword"
+            android:icon="@drawable/ic_baseline_lock_24"
+            />
+
+
+        <item android:title="@string/setting_usermenu"
+            android:iconTint="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:id="@+id/SideUser_setting"
+            android:icon="@drawable/ic_baseline_lock_open_24"
+            />
+
+        <item android:title="@string/news_menu"
+            android:iconTint="@color/white"
+            android:id="@+id/SideUser_news"
+            android:fontFamily="@font/poppins_semibold"
+            android:icon="@drawable/ic_baseline_newspaper_24"
+            />
+
+        <item android:title="My Comment"
+            android:iconTint="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:id="@+id/SideUser_mycomment"
+            android:icon="@drawable/ic_baseline_comment"
+            />
+
+        <item android:title="@string/help_center_phone_call"
+            android:iconTint="@color/white"
+            android:id="@+id/SideUser_call"
+            android:fontFamily="@font/poppins_semibold"
+            android:icon="@drawable/ic_baseline_phone_24"
+            />
+
+        <item android:title="@string/user_logoutmenu"
+            android:id="@+id/SideUser_logOut"
+            android:iconTint="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:icon="@drawable/ic_baseline_lock_open_24"
+            />
+    </group>
+
+</menu>
